@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FADI ALOUANI // PORTFOLIO 2026</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg-deep: #050b14;
+            --bg-card: rgba(10, 25, 47, 0.9);
+            --primary-cyan: #64ffda;
+            --accent-blue: #0077b6;
+            --text-main: #ccd6f6;
+            --border-line: rgba(100, 255, 218, 0.3);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        
+        body {
+            font-family: 'Space Grotesk', sans-serif;
+            background-color: var(--bg-deep);
+            color: var(--text-main);
+            overflow-x: hidden;
+            background-image: 
+                linear-gradient(to bottom, rgba(5, 11, 20, 0.85), rgba(5, 11, 20, 0.98)),
+                url('https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Great_Wave_off_Kanagawa2.jpg/1280px-Great_Wave_off_Kanagawa2.jpg');
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* Barre de Navigation */
+        .navbar {
+            background: rgba(5, 11, 20, 0.95) !important;
+            border-bottom: 1px solid var(--primary-cyan);
+            backdrop-filter: blur(10px);
+            padding: 15px 0;
+        }
+        .navbar-brand {
+            font-family: 'JetBrains Mono';
+            color: var(--primary-cyan) !important;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+        .nav-link {
+            color: #fff !important;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-left: 15px;
+            font-weight: 500;
+        }
+        .nav-link:hover { color: var(--primary-cyan) !important; }
+
+        /* Hero Section */
+        .hero { min-height: 100vh; display: flex; align-items: center; padding-top: 80px; }
+        .hero h1 { font-size: clamp(2.5rem, 6vw, 5rem); font-weight: 700; color: #fff; line-height: 1; }
+        .hero h1 span { color: var(--primary-cyan); }
+        
+        .hero-kanji {
+            font-size: 1.2rem;
+            color: var(--primary-cyan);
+            font-family: 'JetBrains Mono';
+            border-left: 3px solid var(--primary-cyan);
+            padding-left: 20px;
+            margin: 30px 0;
+            background: rgba(100, 255, 218, 0.05);
+            padding: 15px;
+        }
+
+        /* Titres Originaux */
+        .section-title {
+            font-size: 1.8rem;
+            color: #fff;
+            margin: 100px 0 40px 0;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .section-title span { color: var(--primary-cyan); font-family: 'JetBrains Mono'; font-size: 0.9rem; }
+        .section-title::after { content: ""; height: 1px; background: var(--border-line); flex-grow: 1; }
+
+        /* Cartes de Projets (Originales & Classes) */
+        .project-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-line);
+            padding: 25px;
+            height: 100%;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        .project-card:hover {
+            border-color: var(--primary-cyan);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(100, 255, 218, 0.1);
+        }
+        .project-card h4 {
+            color: #fff;
+            font-size: 1rem;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            font-family: 'JetBrains Mono';
+        }
+        .project-card p { font-size: 0.85rem; color: #8892b0; margin-bottom: 20px; }
+
+        /* Boutons Pro */
+        .btn-action {
+            display: inline-block;
+            padding: 8px 16px;
+            border: 1px solid var(--primary-cyan);
+            color: var(--primary-cyan);
+            text-decoration: none;
+            font-size: 0.7rem;
+            font-family: 'JetBrains Mono';
+            font-weight: 700;
+            text-transform: uppercase;
+            transition: 0.3s;
+        }
+        .btn-action:hover {
+            background: var(--primary-cyan);
+            color: var(--bg-deep) !important;
+        }
+
+        .profile-wrap { position: relative; display: inline-block; }
+        .profile-img {
+            max-width: 300px;
+            border: 1px solid var(--primary-cyan);
+            padding: 10px;
+            background: var(--bg-deep);
+            position: relative;
+            z-index: 2;
+        }
+        .profile-wrap::before {
+            content: "";
+            position: absolute;
+            top: 20px; left: 20px;
+            width: 100%; height: 100%;
+            border: 2px solid var(--accent-blue);
+            z-index: 1;
+        }
+
+        footer {
+            padding: 60px 0;
+            border-top: 1px solid var(--border-line);
+            text-align: center;
+            font-family: 'JetBrains Mono';
+            font-size: 0.75rem;
+            letter-spacing: 2px;
+        }
+
+        @media (max-width: 768px) {
+            .hero { text-align: center; }
+            .profile-wrap { margin-top: 50px; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">ALOUANI_FADI // 2026</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Beauvallet">Mme Beauvallet</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#SLAM">Option SLAM</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Sotoca">Mr Sotoca</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Ateliers">Ateliers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#cybersécurité">Sécurité</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#veille">Veille</a></li>
+					<li class="nav-item"><a class="nav-link" href="#stage">Stage</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero container">
+        <div class="row align-items-center">
+            <div class="col-md-7">
+                <h1>FADI<br><span>ALOUANI</span></h1>
+                <div class="hero-kanji">
+                    Étudiant BTS SIO // Option SLAM<br>
+                    Développeur d'Applications Sécurisées<br>
+                    <span style="font-size: 0.8rem; opacity: 0.7;">[ STATUS: OPEN TO PROJECTS ]</span>
+                </div>
+                <a href="#" class="btn-action" style="padding: 15px 30px; font-size: 0.9rem;">Télécharger CV</a>
+            </div>
+            <div class="col-md-5 text-center">
+                <div class="profile-wrap">
+                    <img src="my_photo.jpg" class="profile-img" alt="Fadi Alouani">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION MADAME BEAUVALLET -->
+    <section id="Beauvallet" class="container">
+        <h2 class="section-title"><span>01.</span> Madame Beauvallet</h2>
+        <div class="row g-3">
+            <div class="col-lg-3 col-md-6"><div class="project-card"><h4>TP </h4><p>L</p><a href=".pdf" class="btn-action">Ouvrir PDF</a></div></div>
+           
+        </div>
+    </section>
+
+    <!-- SECTION SLAM -->
+    <section id="SLAM" class="container">
+        <h2 class="section-title"><span>02.</span> Option SLAM</h2>
+        <div class="row g-3">
+            <div class="col-lg-4 col-md-6"><div class="project-card"><h4>TP Symfony </h4><p>Création d'une application web</p><a href="tp-sym.pdf" class="btn-action">Ouvrir PDF</a></div></div>
+           
+        </div>
+    </section>
+
+    <!-- SECTION MR SOTOCA -->
+    <section id="Sotoca" class="container">
+        <h2 class="section-title"><span>03.</span> Monsieur Sotoca</h2>
+        <div class="row g-3">
+            <div class="col-lg-3 col-md-6"><div class="project-card"><h4>TP patrimoine informatique</h4><p>questoin patrimoine informatique</p><a href="TPpatrimoine.pdf" class="btn-action">Ouvrir PDF</a></div></div>
+           
+        </div>
+    </section>
+
+    <!-- SECTION ATELIERS -->
+    <section id="Ateliers" class="container">
+        <h2 class="section-title"><span>04.</span> Ateliers Professionnels</h2>
+        <div class="row g-3">
+            <div class="col-lg-3 col-md-6"><div class="project-card"><h4>TP </h4><p>D</p><a href=".pdf" class="btn-action">Ouvrir PDF</a></div></div>
+           
+        </div>
+    </section>
+
+    <!-- SECTION SECURITE -->
+    <section id="cybersécurité" class="container">
+        <h2 class="section-title"><span>05.</span> Cybersécurité</h2>
+        <div class="row g-3">
+            <div class="col-lg-4 col-md-6"><div class="project-card"><h4>TP</h4><p>T</p><a href=".pdf" class="btn-action">Ouvrir PDF</a></div></div>
+          
+        </div>
+    </section>
+
+    <!-- SECTION VEILLE -->
+    <section id="veille" class="container">
+        <h2 class="section-title"><span>06.</span> Veille Technologique</h2>
+        <div class="row g-3 justify-content-center">
+            <div class="col-md-5"><div class="project-card"><h4>Synthèse Veille</h4><p>Rapport annuel</p><a href="veille_technilogique.pdf" class="btn-action">Ouvrir PDF</a></div></div>
+            <div class="col-md-5"><div class="project-card"><h4>Support Présentation</h4><p>Diaporama final</p><a href="Veille-Technologique-Cybersecurite-en-Entreprise-2025-2026.pptx" class="btn-action">Ouvrir PDF</a></div></div>
+        </div>
+    </section>
+	
+	    <section id="stage " class="container">
+        <h2 class="section-title"><span>06.</span> Stage 1er Année</h2>
+        <div class="row g-3 justify-content-center">
+            <div class="col-md-5"><div class="project-card"><h4>Rapport de stage</h4><p>Rapport </p><a href=".pdf" class="btn-action">Ouvrir PDF</a></div></div>
+           
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>FADI ALOUANI // DESIGNED WITH KYOTO STYLE // 2026</p>
+            <p style="color: var(--primary-cyan); margin-top: 10px; font-size: 0.6rem;">FALOUANI368@GMAIL.COM • 07 69 43 94 21</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
