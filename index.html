@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
-
+<link rel="icon" type="image/png" href="fav.png">
     <style>
         :root {
             --bg-deep: #050b14;
@@ -164,7 +164,7 @@
 
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#home">ALOUANI_FADI // 2026</a>
+            <a class="navbar-brand" href="#home">ALOUANI_FADI // 2026-2027</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
             </button>
@@ -248,11 +248,339 @@
     </section>
 
     <!-- SECTION VEILLE -->
+   <!-- SECTION VEILLE -->
+  <!-- SECTION VEILLE -->
     <section id="veille" class="container">
         <h2 class="section-title"><span>06.</span> Veille Technologique</h2>
+        
+        <!-- Cartes des documents PDF -->
         <div class="row g-3 justify-content-center">
             <div class="col-md-5"><div class="project-card"><h4>Synthèse Veille</h4><p>Rapport annuel</p><a href="veille_technilogique.pdf" class="btn-action">Ouvrir PDF</a></div></div>
             <div class="col-md-5"><div class="project-card"><h4>Support Présentation</h4><p>Diaporama final</p><a href="Veille-Technologique-Cybersecurite-en-Entreprise-2025-2026.pptx" class="btn-action">Ouvrir PDF</a></div></div>
+        </div>
+
+        <!-- Outils, Paramétrage, Méthodologie & Historisation -->
+        <div class="row g-4 mt-4">
+            <!-- 1. Outils utilisés -->
+            <div class="col-lg-6">
+                <div class="project-card">
+                    <h4><i class="fa-solid fa-wrench me-2" style="color: var(--primary-cyan);"></i>Outils Utilisés</h4>
+                    <p>Ensemble des solutions et plateformes mobilisées pour la collecte et la détection :</p>
+                    <ul class="list-unstyled" style="font-size: 0.85rem; color: #8892b0;">
+                        <li class="mb-2"><strong style="color: #fff;">• Scan & SBOM :</strong> Trivy (Aqua Security), Syft, Anchore Grype, CycloneDX CLI.</li>
+                        <li class="mb-2"><strong style="color: #fff;">• Moteurs de recherche :</strong> Recherche avancée Google (Opérateurs booléens, filtres).</li>
+                        <li class="mb-2"><strong style="color: #fff;">• Organismes & Flux officiels :</strong> ANSSI, CERT-FR, CISA, Cybermalveillance.gouv.fr.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 2. Paramétrage effectué -->
+            <div class="col-lg-6">
+                <div class="project-card">
+                    <h4><i class="fa-solid fa-sliders me-2" style="color: var(--primary-cyan);"></i>Paramétrage Effectué</h4>
+                    <p>Configuration des alertes automatisées et ciblage de la recherche :</p>
+                    <ul class="list-unstyled" style="font-size: 0.85rem; color: #8892b0;">
+                        <li class="mb-2"><strong style="color: #fff;">• Mots-clés surveillés :</strong> <code>ransomware entreprise</code>, <code>cybersécurité PME</code>, <code>CVE critique</code>, <code>attaque supply chain</code>, <code>phishing IA</code>.</li>
+                        <li class="mb-2"><strong style="color: #fff;">• Filtres & Réception :</strong> Langues (Français / Anglais), Zone mondiale, Réception par email quotidienne via Google Alerts.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 3. Méthodologie et régularité -->
+            <div class="col-12">
+                <div class="project-card">
+                    <h4><i class="fa-solid fa-arrows-rotate me-2" style="color: var(--primary-cyan);"></i>Méthodologie et Régularité</h4>
+                    <div class="table-responsive mt-3">
+                        <table class="table table-dark table-bordered border-secondary align-middle mb-0" style="font-size: 0.85rem; background: transparent;">
+                            <thead>
+                                <tr style="color: var(--primary-cyan); font-family: 'JetBrains Mono';">
+                                    <th>Étape</th>
+                                    <th>Description</th>
+                                    <th>Fréquence</th>
+                                </tr>
+                            </thead>
+                            <tbody style="color: #8892b0;">
+                                <tr>
+                                    <td><strong style="color: #fff;">Collecte</strong></td>
+                                    <td>Alertes Google, sites officiels (CERT-FR, CISA), blogs spécialisés</td>
+                                    <td>Quotidienne</td>
+                                </tr>
+                                <tr>
+                                    <td><strong style="color: #fff;">Tri</strong></td>
+                                    <td>Sélection des informations pertinentes et filtrage du bruit</td>
+                                    <td>Hebdomadaire</td>
+                                </tr>
+                                <tr>
+                                    <td><strong style="color: #fff;">Analyse</strong></td>
+                                    <td>Évaluation de l'impact des vulnérabilités pour les entreprises</td>
+                                    <td>Mensuelle</td>
+                                </tr>
+                                <tr>
+                                    <td><strong style="color: #fff;">Historisation</strong></td>
+                                    <td>Ajout de l'actualité qualifiée dans le tableau de suivi</td>
+                                    <td>À chaque actualité</td>
+                                </tr>
+                                <tr>
+                                    <td><strong style="color: #fff;">Synthèse</strong></td>
+                                    <td>Mise à jour et rédaction du rapport de veille annuel</td>
+                                    <td>Mensuelle</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4. Tableau d'historisation complet -->
+            <div class="col-12">
+                <div class="project-card">
+                    <h4><i class="fa-solid fa-table-list me-2" style="color: var(--primary-cyan);"></i>Tableau d'Historisation  (2025-2027)</h4>
+                    <p class="mb-3">Suivi chronologique des actualités cybersécurité extraites via l'outil SYFT (du plus récent au plus ancien) :</p>
+                    <div class="table-responsive" style="max-height: 500px; overflow-y: auto;">
+                        <table class="table table-dark table-hover table-bordered border-secondary align-middle mb-0" style="font-size: 0.8rem;">
+                            <thead style="position: sticky; top: 0; background-color: var(--bg-deep); z-index: 1;">
+                                <tr style="color: var(--primary-cyan); font-family: 'JetBrains Mono';">
+                                    <th style="width: 110px;">Date</th>
+                                    <th>Informations</th>
+                                    <th style="width: 140px;">Source</th>
+                                </tr>
+                            </thead>
+                            <tbody style="color: #8892b0;">
+                                <tr>
+                                    <td>10/09/2026</td>
+                                    <td>L'ENISA obtient un accès à des modèles d'IA avancés afin d'évaluer leurs capacités et leurs risques en matière de cybersécurité. Cette démarche montre l'importance croissante de l'évaluation de la sécurité des modèles d'IA.</td>
+                                    <td><span class="badge bg-secondary">Reuters</span></td>
+                                </tr>
+                                <tr>
+                                    <td>09/09/2026</td>
+                                    <td>Anthropic révèle un nouvel incident de cybersécurité impliquant une première version de Claude Opus 4.6 ayant accédé à des systèmes externes lors de tests. L'incident met en évidence les risques liés à l'autonomie croissante des agents IA.</td>
+                                    <td><span class="badge bg-secondary">Reuters</span></td>
+                                </tr>
+                                <tr>
+                                    <td>08/09/2026</td>
+                                    <td>Des chercheurs de Google alertent sur le vol de données propriétaires liées à l'IA : modèles, code source, prompts et données de recherche sont désormais des cibles d'extorsion pour les cybercriminels.</td>
+                                    <td><span class="badge bg-secondary">The Register</span></td>
+                                </tr>
+                                <tr>
+                                    <td>08/09/2026</td>
+                                    <td>Microsoft publie les mises à jour de sécurité de septembre 2026. Les organisations sont invitées à appliquer rapidement les correctifs de sécurité sur les systèmes concernés.</td>
+                                    <td><span class="badge bg-secondary">Microsoft</span></td>
+                                </tr>
+                                <tr>
+                                    <td>04/09/2026</td>
+                                    <td>Des agents IA d'OpenAI ont été impliqués dans un incident ayant conduit à la prise de contrôle temporaire d'un site web de programmation. Cette actualité illustre les difficultés de contrôle et de surveillance des agents autonomes.</td>
+                                    <td><span class="badge bg-secondary">Reuters</span></td>
+                                </tr>
+                                <tr>
+                                    <td>03/09/2026</td>
+                                    <td>OpenAI annonce un engagement d'un milliard de dollars sous forme d'accès subventionné à des outils de cybersécurité utilisant l'IA, de formations et de support technique pour les organisations protégeant des services critiques.</td>
+                                    <td><span class="badge bg-secondary">Reuters</span></td>
+                                </tr>
+                                <tr>
+                                    <td>03/09/2026</td>
+                                    <td>Le CERT-EU publie son Cyber Brief d'août 2026. Le rapport relève notamment des campagnes de spearphishing, une compromission de la supply chain via des dépendances Rust falsifiées et plusieurs incidents impliquant des systèmes d'IA.</td>
+                                    <td><span class="badge bg-secondary">CERT-EU</span></td>
+                                </tr>
+                                <tr>
+                                    <td>27/08/2026</td>
+                                    <td>Plus de 100 entreprises technologiques demandent un renforcement des défenses contre les futures cyberattaques utilisant l'intelligence artificielle.</td>
+                                    <td><span class="badge bg-secondary">Reuters</span></td>
+                                </tr>
+                                <tr>
+                                    <td>18/08/2026</td>
+                                    <td>La CISA ajoute plusieurs nouvelles vulnérabilités exploitées à son catalogue KEV, notamment des failles concernant Microsoft, VMware et Apple.</td>
+                                    <td><span class="badge bg-secondary">CISA</span></td>
+                                </tr>
+                                <tr>
+                                    <td>12/08/2026</td>
+                                    <td>Les cybercriminels poursuivent leurs campagnes de ransomware contre les entreprises, notamment par le vol de données avant le chiffrement des systèmes.</td>
+                                    <td><span class="badge bg-secondary">eSecurityPlanet</span></td>
+                                </tr>
+                                <tr>
+                                    <td>07/08/2026</td>
+                                    <td>Les campagnes de ransomware continuent de viser les organisations et les entreprises, avec une forte utilisation du vol et de l'extorsion de données.</td>
+                                    <td><span class="badge bg-secondary">Cyber Security</span></td>
+                                </tr>
+                                <tr>
+                                    <td>27/07/2026</td>
+                                    <td>Des agents d'intelligence artificielle autonomes démontrent de nouvelles capacités pour identifier et exploiter des failles dans des infrastructures informatiques.</td>
+                                    <td><span class="badge bg-secondary">Computing News</span></td>
+                                </tr>
+                                <tr>
+                                    <td>20/07/2026</td>
+                                    <td>Les attaques par ransomware continuent de cibler les entreprises et les infrastructures, avec des techniques d'extorsion et de vol de données.</td>
+                                    <td><span class="badge bg-secondary">eSecurityPlanet</span></td>
+                                </tr>
+                                <tr>
+                                    <td>14/07/2026</td>
+                                    <td>Microsoft publie son Patch Tuesday de juillet et corrige un grand nombre de vulnérabilités, dont certaines sont déjà exploitées par des attaquants.</td>
+                                    <td><span class="badge bg-secondary">CyberSecBrief</span></td>
+                                </tr>
+                                <tr>
+                                    <td>06/07/2026</td>
+                                    <td>Une vulnérabilité critique d'Adobe ColdFusion est exploitée rapidement après sa divulgation, obligeant les organisations concernées à appliquer les correctifs.</td>
+                                    <td><span class="badge bg-secondary">CyberSecBrief</span></td>
+                                </tr>
+                                <tr>
+                                    <td>29/06/2026</td>
+                                    <td>Des équipements FortiGate exposés sur Internet sont ciblés afin de voler des identifiants et d'obtenir un accès aux réseaux des organisations.</td>
+                                    <td><span class="badge bg-secondary">CyberSecBrief</span></td>
+                                </tr>
+                                <tr>
+                                    <td>22/06/2026</td>
+                                    <td>L'opération Endgame permet de démanteler une infrastructure utilisée pour diffuser des logiciels malveillants et mener des cyberattaques.</td>
+                                    <td><span class="badge bg-secondary">CyberSecBrief</span></td>
+                                </tr>
+                                <tr>
+                                    <td>15/06/2026</td>
+                                    <td>Des plugins JetBrains malveillants sont utilisés pour voler des clés API liées à l'intelligence artificielle sur les postes de développeurs.</td>
+                                    <td><span class="badge bg-secondary">CyberSecBrief</span></td>
+                                </tr>
+                                <tr>
+                                    <td>08/06/2026</td>
+                                    <td>Une vulnérabilité critique d'Oracle PeopleSoft est exploitée contre de nombreuses organisations, démontrant les risques liés aux applications professionnelles.</td>
+                                    <td><span class="badge bg-secondary">CyberSecBrief</span></td>
+                                </tr>
+                                <tr>
+                                    <td>01/06/2026</td>
+                                    <td>La campagne Miasma/Shai-Hulud cible notamment npm, PyPI et Microsoft Azure afin de récupérer des identifiants et des données sensibles.</td>
+                                    <td><span class="badge bg-secondary">CyberSecBrief</span></td>
+                                </tr>
+                                <tr>
+                                    <td>25/05/2026</td>
+                                    <td>Des dépôts GitHub et des packages npm sont compromis, confirmant que les attaques contre la supply chain logicielle représentent un risque important pour les entreprises.</td>
+                                    <td><span class="badge bg-secondary">CyberSecBrief</span></td>
+                                </tr>
+                                <tr>
+                                    <td>20/05/2026</td>
+                                    <td>Plusieurs vulnérabilités affectant Microsoft Defender et Azure sont corrigées et certaines sont ajoutées au catalogue des vulnérabilités exploitées de la CISA.</td>
+                                    <td><span class="badge bg-secondary">CISA</span></td>
+                                </tr>
+                                <tr>
+                                    <td>12/05/2026</td>
+                                    <td>Microsoft corrige 120 vulnérabilités, dont une faille critique affectant Outlook et pouvant permettre des attaques contre les utilisateurs.</td>
+                                    <td><span class="badge bg-secondary">CyberSecBrief</span></td>
+                                </tr>
+                                <tr>
+                                    <td>04/05/2026</td>
+                                    <td>Une campagne de phishing de type AiTM cible des milliers d'utilisateurs et cherche à récupérer leurs jetons de session afin de prendre le contrôle des comptes.</td>
+                                    <td><span class="badge bg-secondary">CyberSecBrief</span></td>
+                                </tr>
+                                <tr>
+                                    <td>27/04/2026</td>
+                                    <td>La campagne Shai-Hulud touche plusieurs écosystèmes logiciels et cherche notamment à voler des identifiants dans les chaînes CI/CD.</td>
+                                    <td><span class="badge bg-secondary">CyberSecBrief</span></td>
+                                </tr>
+                                <tr>
+                                    <td>20/04/2026</td>
+                                    <td>Une vulnérabilité liée au Model Context Protocol (MCP) peut permettre l'exécution de commandes et pose de nouveaux risques pour les entreprises utilisant des outils d'intelligence artificielle.</td>
+                                    <td><span class="badge bg-secondary">CyberSecBrief</span></td>
+                                </tr>
+                                <tr>
+                                    <td>14/04/2026</td>
+                                    <td>Microsoft signale une vulnérabilité activement exploitée affectant plusieurs de ses produits professionnels.</td>
+                                    <td><span class="badge bg-secondary">CISA</span></td>
+                                </tr>
+                                <tr>
+                                    <td>06/04/2026</td>
+                                    <td>Des cyberattaques ciblent les environnements cloud et de développement, montrant l'importance de sécuriser les outils et infrastructures utilisés par les entreprises.</td>
+                                    <td><span class="badge bg-secondary">CyberSecBrief</span></td>
+                                </tr>
+                                <tr>
+                                    <td>30/03/2026</td>
+                                    <td>Une attaque de supply chain touche plusieurs outils logiciels, dont Axios, Trivy et LiteLLM, avec un risque de vol d'identifiants dans les environnements CI/CD.</td>
+                                    <td><span class="badge bg-secondary">CyberSecBrief</span></td>
+                                </tr>
+                                <tr>
+                                    <td>23/03/2026</td>
+                                    <td>Une campagne TeamPCP compromet plusieurs outils et packages open source utilisés par les développeurs.</td>
+                                    <td><span class="badge bg-secondary">CyberSecBrief</span></td>
+                                </tr>
+                                <tr>
+                                    <td>16/03/2026</td>
+                                    <td>La campagne Glass Worm compromet des dépôts GitHub, des packages npm et des extensions VS Code, illustrant les risques liés à la supply chain logicielle.</td>
+                                    <td><span class="badge bg-secondary">CyberSecBrief</span></td>
+                                </tr>
+                                <tr>
+                                    <td>10/03/2026</td>
+                                    <td>Microsoft corrige de nombreuses vulnérabilités, dont plusieurs pouvant permettre une exécution de code à distance.</td>
+                                    <td><span class="badge bg-secondary">CISA</span></td>
+                                </tr>
+                                <tr>
+                                    <td>03/03/2026</td>
+                                    <td>Des attaques ciblent Cisco Catalyst SD-WAN, mettant en évidence les risques liés aux équipements réseau utilisés par les entreprises.</td>
+                                    <td><span class="badge bg-secondary">CyberSecBrief</span></td>
+                                </tr>
+                                <tr>
+                                    <td>23/02/2026</td>
+                                    <td>Des équipements FortiGate sont ciblés par des attaques permettant aux cybercriminels d'obtenir un accès aux réseaux d'entreprise.</td>
+                                    <td><span class="badge bg-secondary">CyberSecBrief</span></td>
+                                </tr>
+                                <tr>
+                                    <td>18/02/2026</td>
+                                    <td>Une vulnérabilité critique de Google Chrome est activement exploitée et peut permettre l'exécution de code malveillant sur les machines concernées.</td>
+                                    <td><span class="badge bg-secondary">CISA</span></td>
+                                </tr>
+                                <tr>
+                                    <td>10/02/2026</td>
+                                    <td>Microsoft publie plusieurs correctifs de sécurité concernant des vulnérabilités critiques affectant Windows et Azure.</td>
+                                    <td><span class="badge bg-secondary">CISA</span></td>
+                                </tr>
+                                <tr>
+                                    <td>02/02/2026</td>
+                                    <td>Des cyberattaques ciblent des infrastructures énergétiques et exploitent notamment des vulnérabilités présentes dans des équipements Fortinet et Ivanti.</td>
+                                    <td><span class="badge bg-secondary">CyberSecBrief</span></td>
+                                </tr>
+                                <tr>
+                                    <td>26/01/2026</td>
+                                    <td>Une campagne de vishing cible les utilisateurs de Google, Microsoft et Okta afin de récupérer leurs identifiants et contourner l'authentification multifacteur.</td>
+                                    <td><span class="badge bg-secondary">Cybersecurity Dive</span></td>
+                                </tr>
+                                <tr>
+                                    <td>19/01/2026</td>
+                                    <td>Une attaque par ransomware touche un hôpital belge, tandis que des vulnérabilités affectant Cisco et AWS présentent également des risques pour les entreprises.</td>
+                                    <td><span class="badge bg-secondary">CyberSecBrief</span></td>
+                                </tr>
+                                <tr>
+                                    <td>13/01/2026</td>
+                                    <td>Microsoft corrige plusieurs vulnérabilités critiques, dont une vulnérabilité activement exploitée permettant potentiellement une exécution de code.</td>
+                                    <td><span class="badge bg-secondary">CISA</span></td>
+                                </tr>
+                                <tr>
+                                    <td>05/01/2026</td>
+                                    <td>La campagne Shai-Hulud montre les risques liés aux dépendances et packages utilisés par les développeurs dans les entreprises.</td>
+                                    <td><span class="badge bg-secondary">CyberSecBrief</span></td>
+                                </tr>
+                                <tr>
+                                    <td>29/12/2025</td>
+                                    <td>Des cyberattaques exploitent des logiciels, bases de données et extensions de navigateur pour accéder aux systèmes des entreprises.</td>
+                                    <td><span class="badge bg-secondary">CyberSecBrief</span></td>
+                                </tr>
+                                <tr>
+                                    <td>22/12/2025</td>
+                                    <td>Le NIST investit 20 millions de dollars dans deux centres consacrés à l'intelligence artificielle, dont un dédié à la cybersécurité des infrastructures critiques.</td>
+                                    <td><span class="badge bg-secondary">NIST</span></td>
+                                </tr>
+                                <tr>
+                                    <td>17/12/2025</td>
+                                    <td>Des extensions malveillantes de Visual Studio Code infectent les machines des développeurs et représentent un risque pour la chaîne d'approvisionnement logicielle.</td>
+                                    <td><span class="badge bg-secondary">Cyware</span></td>
+                                </tr>
+                                <tr>
+                                    <td>11/12/2025</td>
+                                    <td>Une campagne de phishing « ConsentFix » cible les comptes Microsoft en utilisant Azure CLI et des techniques OAuth permettant de contourner certaines protections MFA.</td>
+                                    <td><span class="badge bg-secondary">BleepingComputer / CERT-EU</span></td>
+                                </tr>
+                                <tr>
+                                    <td>03/12/2025</td>
+                                    <td>Le RSSI de RTI partage des stratégies de cybersécurité pour les institutions disposant de ressources limitées.</td>
+                                    <td><span class="badge bg-secondary">Cybersecurity</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 	
@@ -266,8 +594,9 @@
 
     <footer>
         <div class="container">
-            <p>FADI ALOUANI // DESIGNED WITH KYOTO STYLE // 2026</p>
+            <p>FADI ALOUANI // 2026-2027</p>
             <p style="color: var(--primary-cyan); margin-top: 10px; font-size: 0.6rem;">FALOUANI368@GMAIL.COM • 07 69 43 94 21</p>
+		<p style="color: var(--primary-cyan); margin-top: 10px; font-size: 0.6rem;">PORTFOLIO 1ère Année : <a href="https://famous-longma-148955.netlify.app/">Mon portfolio</a></p>
         </div>
     </footer>
 
